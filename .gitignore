@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 
-# testing
+# testinggit remote add origin https://github.com/career_karma_tutorials/git_tutorials
 /coverage
 
 # production
