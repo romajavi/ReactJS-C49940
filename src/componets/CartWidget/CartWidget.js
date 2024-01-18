@@ -1,4 +1,5 @@
-import carrito from './assets/carrito.svg'
+import React from 'react';
+import carrito from './assets/carrito.svg';
 
 const CartWidget = () => {
     return (
@@ -6,7 +7,7 @@ const CartWidget = () => {
             <img src={carrito} alt="carrito-wdiget"/>
             0
         </div>
-    )
+    );
 }
 
-export default CartWidget
+export default CartWidget;

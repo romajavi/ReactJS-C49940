@@ -1,20 +1,18 @@
-/* components/ItemList/ItemList.css */
-
 .item-card {
-    width: 400px; /* Establece el ancho deseado para las tarjetas */
-    height: 450px; /* Establece la altura deseada para las tarjetas */
+    width: 400px;
+    height: 450px;
     border: 1px solid #ddd;
     padding: 10px;
     margin: 10px;
     text-align: center;
-    border-radius: 10px; /* Agrega bordes redondos */
-    overflow: hidden; /* Asegura que las esquinas redondeadas se apliquen correctamente */
+    border-radius: 10px;
+    overflow: hidden;
   }
   
   
   .item-card img {
     width: 300px;
-    height: 250px; /* Asegura que la imagen no exceda el tamaño de la tarjeta */
+    height: 250px;
   }
   
   .item-card h3 {
@@ -34,5 +32,5 @@
 
   
   .item-card button {
-    margin-top: 20px; /* Añade espacio entre el título y el botón */
+    margin-top: 20px;
   }

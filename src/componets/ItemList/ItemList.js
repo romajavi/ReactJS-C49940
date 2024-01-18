@@ -1,6 +1,5 @@
-// components/ItemList/ItemList.js
 import React from 'react';
-import './ItemList.css';  // Asegúrate de tener tus estilos CSS para ItemList
+import './ItemList.css';
 
 const ItemList = ({ products, onSelectProduct }) => {
   return (

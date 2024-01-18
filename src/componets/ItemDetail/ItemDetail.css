@@ -1,0 +1,24 @@
+.item-detail {
+    max-width: 600px;
+    margin: auto; 
+    padding: 50px;
+
+    h3 {
+    font-size: 2.5em; 
+    }
+
+    img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin: 20px 0; 
+    }
+
+    p {
+    font-size: 1.5em; 
+    }
+
+    button {
+    margin-top: 10px;
+    }
+}

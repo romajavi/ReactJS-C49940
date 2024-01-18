@@ -1,9 +1,8 @@
-// ItemCount.js
 import React, { useState } from "react";
 import "../ItemCount/ItemCount.css";
 import { Button } from "react-bootstrap";
 
-const ItemCount = ({ stock = 5, initial = 1, onAdd }) => {
+const ItemCount = ({ stock = 5, initial = 1, onAdd, isVisible }) => {
 const [count, setCount] = useState(initial);
 
 const sumar = () => {
@@ -22,7 +21,7 @@ const agregarCantidad = () => {
     onAdd(count);
 };
 
-return (
+return isVisible ? (
     <div className="containerButton">
     <button className="Boton1" onClick={restar}>
         {" "}
@@ -38,7 +37,7 @@ return (
         AGREGAR AL CARRITO{" "}
     </button>
     </div>
-)
+) : null;
 };
 
 export default ItemCount;
