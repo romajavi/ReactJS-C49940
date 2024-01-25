@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
-import '../ItemDetail/ItemDetail.css';
+import '../ItemDetailContainer/ItemDetailContainer.css';
 
-const ItemDetail = ({ product, onCloseDetail }) => {
+const ItemDetailContainer = ({ product, onCloseDetail }) => {
   const [isItemCountVisible, setItemCountVisibility] = useState(true);
 
   if (!product) {
@@ -34,4 +34,4 @@ const ItemDetail = ({ product, onCloseDetail }) => {
   );
 };
 
-export default ItemDetail;
+export default ItemDetailContainer;

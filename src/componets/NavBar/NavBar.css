@@ -1,0 +1,15 @@
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .cart-widget {
+    margin-left: 2rem;
+  }
+/* Agrega más estilos según tus necesidades */

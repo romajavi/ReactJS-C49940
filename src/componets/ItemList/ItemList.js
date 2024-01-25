@@ -8,6 +8,7 @@ const ItemList = ({ products, onSelectProduct }) => {
         <div key={product.id} className="item-card">
           <img src={product.image} alt={product.name} />
           <h3>{product.name}</h3>
+          <p>Disponibles: {product.stock}</p>
           <button onClick={() => onSelectProduct(product.id)}>Detalle</button>
         </div>
       ))}
