@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import ItemList from '../ItemList/ItemList';
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, Link } from 'react-router-dom';
 import '../ItemListContainer/ItemListContainer.css';
 import productsData from './ProductsData';
 
@@ -19,9 +19,11 @@ const ItemListContainer = ({ greeting }) => {
 
   const handleCloseDetail = () => {
     setSelectedProduct(null);
+    navigate(`/products/${category}`);
   };
+
   useEffect(() => {
-    setProducts(productsData)
+    setProducts(productsData);
   }, []);
 
   const filteredProducts = category
@@ -34,10 +36,7 @@ const ItemListContainer = ({ greeting }) => {
       {category && <h3>{category}</h3>}
       <ItemCount stock={5} initial={1} OnAdd={() => {}} />
 
-      <ItemList
-        products={filteredProducts}
-        onSelectProduct={handleSelectProduct}
-      />
+      <ItemList products={filteredProducts} onSelectProduct={handleSelectProduct} />
 
       {selectedProduct && (
         <ItemDetailContainer product={selectedProduct} onCloseDetail={handleCloseDetail} />

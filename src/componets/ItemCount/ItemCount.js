@@ -2,42 +2,33 @@ import React, { useState } from "react";
 import "../ItemCount/ItemCount.css";
 import { Button } from "react-bootstrap";
 
-const ItemCount = ({ stock = 5, initial = 1, onAdd, isVisible }) => {
-const [count, setCount] = useState(initial);
+const ItemCount = ({ stock, initial, onAdd, isVisible }) => {
+    const [count, setCount] = useState(initial);
 
-const sumar = () => {
-    if (stock > count) {
-    setCount((prevCount) => prevCount + 1);
+    const handleIncrement = () => {
+    if (count < stock) {
+        setCount(count + 1);
     }
-};
+    };
 
-const restar = () => {
+    const handleDecrement = () => {
     if (count > 1) {
-    setCount((prevCount) => prevCount - 1);
+        setCount(count - 1);
     }
-};
+    };
 
-const agregarCantidad = () => {
+    const handleAddToCart = () => {
     onAdd(count);
-};
+    };
 
-return isVisible ? (
-    <div className="containerButton">
-    <button className="Boton1" onClick={restar}>
-        {" "}
-        -{" "}
-    </button>
-    <label> {count} </label>
-    <button className="Boton1" onClick={sumar}>
-        {" "}
-        +{" "}
-    </button>
-    <button className="Agregar" onClick={agregarCantidad}>
-        {" "}
-        AGREGAR AL CARRITO{" "}
-    </button>
+    return isVisible ? (
+    <div className="item-count">
+        <button onClick={handleDecrement}>-</button>
+        <span>{count}</span>
+        <button onClick={handleIncrement}>+</button>
+        <button onClick={handleAddToCart}>Agregar al Carrito</button>
     </div>
-) : null;
+    ) : null;
 };
 
 export default ItemCount;
