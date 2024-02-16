@@ -1,0 +1,107 @@
+.titulo {
+    color: #333; /* Color de texto */
+    font-size: 24px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+.lista {
+    list-style: none;
+
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.imagen {
+    max-width: 150px;
+    max-height: 150px;
+    margin-bottom: 10px;
+}
+
+.texto {
+    margin: 0;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+.button1 {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+
+}
+
+.button2 {
+    background-color: #03bb85;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.button3 {
+    background-color: #03bb85;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center; /* Ajusta esto según tus necesidades */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+
+
+
+.resumencart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resumencart p {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.resumencart .button {
+    background-color: #03bb85;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+
+
+}

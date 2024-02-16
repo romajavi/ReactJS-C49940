@@ -1,0 +1,8 @@
+.cart-quantity {
+    color: #fff;
+    background-color: #03bb85;
+    padding: 2px 6px;
+    border-radius: 50%; 
+    font-size: 12px; 
+    text-decoration: none;
+}

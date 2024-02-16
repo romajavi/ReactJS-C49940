@@ -1,12 +1,13 @@
-import './NavBar.css';
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
 
+import '../../componets/NavBar/NavBar.css';
+
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg" className="navbar justify-content-center">
+    <Navbar bg="light" expand="lg" className="navbar">
       <Navbar.Brand as={Link} to="/" className="navbar-brand">PetXpress</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

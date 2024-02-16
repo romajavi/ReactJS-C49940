@@ -1,68 +1,68 @@
 .item-detail {
-background-color: #ffffff;
-border: 1px solid #ddd;
-border-radius: 8px;
-padding: 20px;
-text-align: center;
-margin-top: 20px;
-}
-
-.item-detail img {
-max-width: 100%;
-height: auto;
-border-radius: 4px;
-}
-
-.item-detail h3 {
-margin-top: 10px;
-font-size: 1.5em;
-color: #333;
-}
-
-.item-detail p {
-color: #666;
-margin-bottom: 20px;
-}
-
-.item-detail button {
-background-color: #03bb85;
-color: white;
-border: none;
-padding: 8px 16px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 14px;
-cursor: pointer;
-border-radius: 4px;
-margin-right: 10px;
-}
-
-.item-detail button:hover {
-background-color: #03bb84bb;
-}
-
-.item-detail button:last-child {
-background-color: #d9534f; 
-}
-
-.item-detail button:last-child:hover {
-background-color: #c9302c;
-}
-
-
-.custom-detail-card {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px; /* Limitar el ancho para que no se extienda demasiado */
+    margin: 20px auto; /* Centrar el contenedor horizontalmente */
+  }
+  
+  .item-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 20px; /* Agregamos margen inferior para separar la imagen del resto del contenido */
+  }
+  
+  .item-detail h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px; /* Separación entre el título y el detalle */
+  }
+  
+  .item-detail p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .item-detail button {
+    background-color: #03bb85;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .item-detail button:hover {
+    background-color: #03bb84bb;
+  }
+  
+  .item-detail button:last-child {
+    background-color: #d9534f;
+  }
+  
+  .item-detail button:last-child:hover {
+    background-color: #c9302c;
+  }
+  
+  .custom-detail-card {
     max-width: 350px;
     margin: auto;
     padding: 10px;
-}
-
-.custom-detail-card img {
+  }
+  
+  .custom-detail-card img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
-}
-
-.Container {
+  }
+  
+  .Container {
     text-align: center;
-}
+    padding: 20px;
+  }

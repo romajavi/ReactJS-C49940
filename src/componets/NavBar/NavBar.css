@@ -1,32 +1,20 @@
 .navbar {
-  background-color: #4CAF50; 
+  background-color: #fef9ea;
 }
 
 .navbar-brand {
-  color: white; 
+  font-size: 34px;
+  font-weight: bold;
+  color: #ab8262;
 }
 
 .nav-link {
-  color: rgb(0, 0, 0) !important; 
+  color: #03bb85;
+  margin-right: 40px;
+  font-weight: bold;
 }
 
 .nav-link:hover {
-  color: #aa7c09 !important; 
-}
-
-.cart-widget {
-  color: white; 
-}
-
-
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.navbar {
-  display: flex;
-  justify-content: center;
+  color: #ab82624b;
+  text-decoration: none;
 }

@@ -1,0 +1,17 @@
+.item-detail .button-finish {
+    background-color: #03bb85;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .item-detail .button-finish:hover {
+    background-color: #028c63; /* Cambia el color al pasar el ratón sobre el botón */
+  }
